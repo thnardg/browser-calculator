@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+html, body {
+    height: 100%;
+    margin-top: 0;
+}
+
+body {
+    background: linear-gradient(186deg, #cdb3d4 0%, #d7b5c8 16%, 
+    #e0b6bb 33%, #e9b8af 50%, #f1baa2 66%, #f8bc95 83%, #ffbe88 100%);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    background: #FFF;
+    width: 300px;
+    padding: 10px 15px 20px 15px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 2px 13px #d1aec2;
+}
+
+.result {
+    padding: 15px;
+    margin: 25px 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Fredoka One', sans-serif;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: right;
+    border-radius: 15px;
+    background-color: #9FE6F0;
+    box-shadow: inset 0 0 4px #CFF2F7, 2px 2px 3px #C1FFFF;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    float: left;
+    list-style: none;
+    background: #FBC8DA;
+    color: #FFF;
+    width: 15%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 500;
+    box-shadow: 1px 2px 3px #FFA8C7;
+}
+
+.operator, .operator_c, .operatorPlus {
+    background: #9FE6F0;
+    color: #FFF;
+    box-shadow: 1px 2px 3px #C1FFFF;
+}
+
+.operator_c {
+    width: 120px;
+}
+
+.operatorPlus {
+    height: 100px;
+    float: right;
+    line-height: 100px;
+    text-align: center;
+}
+
+.zero {
+    width: 120px;
+}
+
+.equalSign {
+    background: #CEB5D5;
+    color: #FFF;
+    box-shadow: 1px 1px 3px #B27EC0;
+}
+
+ul li:hover {
+    box-shadow: 1px 2px 3px #FF5E99;
+}
+
+.operator:hover, .operator_c:hover, .operatorPlus:hover {
+    box-shadow: 1px 2px 3px #0FE6E6;
+}
+
+.equalSign:hover {
+    box-shadow: 1px 2px 3px #823A95;
+}
+
+.signature {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #B27EC0;
+    font-weight: 700;
+}

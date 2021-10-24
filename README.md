@@ -1,0 +1,1 @@
+This is a simple browser calculator made with HTML, CSS and Javascript as a beginner project.
