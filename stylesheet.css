@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&family=Montserrat:wght@400;500&display=swap');
 
 html, body {
     height: 100%;
@@ -6,8 +6,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(186deg, #cdb3d4 0%, #d7b5c8 16%, 
-    #e0b6bb 33%, #e9b8af 50%, #f1baa2 66%, #f8bc95 83%, #ffbe88 100%);
+    background: #f2f2f2;
 }
 
 .flex {
@@ -19,54 +18,70 @@ body {
 }
 
 .calculator {
-    background: #FFF;
     width: 300px;
     padding: 10px 15px 20px 15px;
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 1px 2px 13px #d1aec2;
+    border-radius: 5px;
+    border-radius: 5px;
+    background: #f2f2f2;
+    box-shadow:  5px 5px 10px #d4d4d4,
+                 -5px -5px 10px #ffffff;
 }
+
+/* ----- Result Screen ----- */
 
 .result {
     padding: 15px;
     margin: 25px 5px;
     overflow: hidden;
     white-space: nowrap;
-    font-family: 'Fredoka One', sans-serif;
-    color: #FFF;
-    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    color: #d3d3d3;
+    font-weight: 300;
     font-size: 50px;
     text-align: right;
-    border-radius: 15px;
-    background-color: #9FE6F0;
-    box-shadow: inset 0 0 4px #CFF2F7, 2px 2px 3px #C1FFFF;
+    border-radius: 5px;
+    background: #f2f2f2;
+    box-shadow:  5px 5px 0px #f0f0f0,
+                 -5px -5px 0px #f4f4f4;
 }
 
+/* ------ Buttons ------ */
 ul {
     padding: 0;
     margin: 0;
 }
 
 ul li {
+    border-radius: 120px;
+    background: #f2f2f2;
+    box-shadow:  5px 5px 5px #e6e6e6,
+                 -5px -5px 5px #fefefe;
     float: left;
     list-style: none;
-    background: #FBC8DA;
-    color: #FFF;
+    color: #d3d3d3;
     width: 15%;
     padding: 10px;
     margin: 5px;
-    border-radius: 20px;
     cursor: pointer;
     font-size: 30px;
-    font-family: 'Fredoka One', sans-serif;
-    font-weight: 500;
-    box-shadow: 1px 2px 3px #FFA8C7;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
 }
 
-.operator, .operator_c, .operatorPlus {
-    background: #9FE6F0;
-    color: #FFF;
-    box-shadow: 1px 2px 3px #C1FFFF;
+.operator, .operatorPlus, .equalSign, .operator_c {
+    border-radius: 120px;
+    background: #f2f2f2;
+    box-shadow:  5px 5px 5px #e6e6e6,
+                 -5px -5px 5px #fefefe;
+    
+    */ -- Font Gradient -- */
+    background: #C35BF0;
+    background: -webkit-repeating-linear-gradient(to bottom right, #C35BF0 0%, #FF1F78 100%);
+    background: -moz-repeating-linear-gradient(to bottom right, #C35BF0 0%, #FF1F78 100%);
+    background: repeating-linear-gradient(to bottom right, #C35BF0 0%, #FF1F78 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .operator_c {
@@ -74,7 +89,7 @@ ul li {
 }
 
 .operatorPlus {
-    height: 100px;
+    height: 110px;
     float: right;
     line-height: 100px;
     text-align: center;
@@ -84,36 +99,23 @@ ul li {
     width: 120px;
 }
 
-.equalSign {
-    background: #CEB5D5;
-    color: #FFF;
-    box-shadow: 1px 1px 3px #B27EC0;
-}
-
 ul li:hover {
-    box-shadow: 1px 2px 3px #FF5E99;
+    box-shadow: 1px 2px 3px #FFF;
 }
 
-.operator:hover, .operator_c:hover, .operatorPlus:hover {
-    box-shadow: 1px 2px 3px #0FE6E6;
-}
-
-.equalSign:hover {
-    box-shadow: 1px 2px 3px #823A95;
-}
+/* ----- Footer ----- */
 
 .signature {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    color: #777;
     font-size: 13px;
     padding-top: 10px;
 }
 
 a {
-    color: #fff;
+    color: #B27EC0;
 }
 
 a:hover {
-    color: #B27EC0;
-    font-weight: 700;
+    font-weight: 500;
 }
