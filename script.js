@@ -1,3 +1,5 @@
+//TODO: Add more operators.
+
 const $lis = document.querySelectorAll("ul li")
 
 $lis.forEach((node) => {
